@@ -1,24 +1,20 @@
-#N canvas 961 22 457 558 10;
+#N canvas 129 48 641 553 10;
 #X obj 90 39 ctlin;
 #X floatatom 116 115 5 0 0 0 - - -;
 #X floatatom 139 87 5 0 0 0 - - -;
 #X floatatom 56 114 5 0 0 0 - - -;
 #X obj 104 224 pgmin;
 #X floatatom 78 281 5 0 0 0 - - -;
-#X floatatom 157 291 5 0 0 0 - - -;
+#X floatatom 162 303 5 0 0 0 - - -;
 #X obj 81 397 notein;
 #X floatatom 58 463 5 0 0 0 - - -;
 #X floatatom 99 463 5 0 0 0 - - -;
 #X floatatom 155 439 5 0 0 0 - - -;
 #X obj 181 325 midiin;
-#X floatatom 168 378 5 0 0 0 - - -;
-#X obj 271 286 ctlout;
-#X msg 228 209 64;
-#X msg 275 209 1;
-#X obj 272 157 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 265 236 ctlout;
+#X obj 266 105 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X msg 321 207 3;
-#X obj 279 131 console;
+#X obj 286 56 console;
 #X obj 286 380 controls;
 #X obj 286 443 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -28,6 +24,15 @@
 -1 -1;
 #X obj 379 441 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
+#X obj 181 347 print;
+#X obj 265 210 unpack 0 0 0;
+#X floatatom 265 162 5 0 0 0 - - -;
+#X msg 265 183 \$1 8 1;
+#X text 262 136 My first fader is CC 8 channel 1;
+#X text 320 162 Variale value;
+#X text 322 182 Value \, CC \, Ch;
+#X text 349 211 make sure the messages are passed right to left;
+#X text 339 240 Send to device;
 #X connect 0 0 3 0;
 #X connect 0 1 1 0;
 #X connect 0 2 2 0;
@@ -36,14 +41,13 @@
 #X connect 7 0 8 0;
 #X connect 7 1 9 0;
 #X connect 7 2 10 0;
-#X connect 11 0 12 0;
-#X connect 14 0 13 0;
-#X connect 15 0 13 1;
-#X connect 16 0 14 0;
-#X connect 16 0 15 0;
-#X connect 16 0 17 0;
-#X connect 17 0 13 2;
-#X connect 19 0 20 0;
-#X connect 19 1 21 0;
-#X connect 19 2 22 0;
-#X connect 19 3 23 0;
+#X connect 11 0 20 0;
+#X connect 15 0 16 0;
+#X connect 15 1 17 0;
+#X connect 15 2 18 0;
+#X connect 15 3 19 0;
+#X connect 21 0 12 0;
+#X connect 21 1 12 1;
+#X connect 21 2 12 2;
+#X connect 22 0 23 0;
+#X connect 23 0 21 0;
