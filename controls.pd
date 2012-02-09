@@ -1,0 +1,13 @@
+#N canvas 205 160 450 300 10;
+#X obj 96 57 click 1 8;
+#X obj 96 117 outlet;
+#X obj 259 118 outlet;
+#X obj 18 116 outlet;
+#X obj 171 117 outlet;
+#X obj 171 57 click 4 8;
+#X obj 18 56 click 3 8;
+#X obj 259 58 click 2 8;
+#X connect 0 0 1 0;
+#X connect 5 0 4 0;
+#X connect 6 0 3 0;
+#X connect 7 0 2 0;

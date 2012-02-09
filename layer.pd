@@ -1,4 +1,4 @@
-#N canvas 103 418 559 444 10;
+#N canvas 79 380 559 444 10;
 #X obj 190 150 fader \$1 3;
 #X obj 259 151 click \$1 1;
 #X obj 328 151 click \$1 2;
@@ -7,6 +7,7 @@
 #X obj 138 96 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 101 149 float \$1;
+#X text 207 53 A layer consists of one fader \, and two buttons;
 #X connect 0 0 5 0;
 #X connect 0 0 3 1;
 #X connect 1 0 5 0;
