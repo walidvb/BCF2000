@@ -7,4 +7,4 @@ Console consists of 8 channels, corresponding to each channel on the BCF. Each c
 2. Lock/unlock (0 / 127)
 3. Mute/Demute (0 / 127)
 4. Fader
-5.
+5. 

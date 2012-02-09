@@ -1,0 +1,4 @@
+#N canvas 505 327 450 300 10;
+#X obj 49 141 print faderugh;
+#X obj 50 51 ctlin 1 4;
+#X connect 1 0 0 0;
