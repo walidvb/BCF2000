@@ -33,6 +33,11 @@
 #X text 322 182 Value \, CC \, Ch;
 #X text 349 211 make sure the messages are passed right to left;
 #X text 329 240 Send to device;
+#X floatatom 433 156 5 0 0 0 - - -;
+#X msg 433 177 \$1 23 1;
+#X obj 324 315 layers;
+#X obj 322 288 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X connect 0 0 3 0;
 #X connect 0 1 1 0;
 #X connect 0 2 2 0;
@@ -51,3 +56,6 @@
 #X connect 21 2 12 2;
 #X connect 22 0 23 0;
 #X connect 23 0 21 0;
+#X connect 29 0 30 0;
+#X connect 30 0 21 0;
+#X connect 32 0 31 0;
