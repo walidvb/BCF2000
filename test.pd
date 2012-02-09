@@ -32,7 +32,7 @@
 #X text 320 162 Variale value;
 #X text 322 182 Value \, CC \, Ch;
 #X text 349 211 make sure the messages are passed right to left;
-#X text 339 240 Send to device;
+#X text 329 240 Send to device;
 #X connect 0 0 3 0;
 #X connect 0 1 1 0;
 #X connect 0 2 2 0;
