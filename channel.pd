@@ -1,5 +1,5 @@
-#N canvas 677 305 715 469 10;
-#X text 491 6;
+#N canvas 11 22 715 469 10;
+#X text 491 6 comment;
 #X obj 16 22 ctlin \$1 1;
 #X obj 225 177 outlet;
 #X obj 87 22 ctlin \$1 2;
@@ -10,9 +10,10 @@
 #X obj 430 23 ctlin \$1 7;
 #X obj 499 23 ctlin \$1 8;
 #X obj 164 117 pack f f f f f f f f f;
-#X obj 56 85 ctlin;
-#X obj 122 102 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 43 119 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 43 95 ctlin \$1;
+#X obj 82 141 \$1;
 #X connect 1 0 10 1;
 #X connect 3 0 10 2;
 #X connect 4 0 10 3;
@@ -22,5 +23,6 @@
 #X connect 8 0 10 7;
 #X connect 9 0 10 8;
 #X connect 10 0 2 0;
-#X connect 11 0 12 0;
-#X connect 12 0 10 0;
+#X connect 11 0 13 0;
+#X connect 12 0 11 0;
+#X connect 13 0 10 0;
