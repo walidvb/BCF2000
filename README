@@ -6,10 +6,14 @@ click $CC $channel(on/off button)
 fader $CC $channel (fader and knobs)
 
 layer $layerID returns Opacity, Mute, Lock as a list
-layers return 8 layers, each containing the forementionned list
+layers return 8 layers, each containing the forementionned list. input just bangs the whole thing.
 
 controls has 4 outs: Go Pause Reset Back
 
 imgProc $function returns each of it’s values. Crop has 4 valid entries, the 4 following are empty
-
+	$function:
+		Format = 4
+		Image = 5
+		Crop = 6
+		Keys = 7
 test has different test and monitoring functions

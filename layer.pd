@@ -4,10 +4,11 @@
 #X obj 328 151 click \$1 2;
 #X obj 209 228 pack f f f f;
 #X obj 224 309 outlet;
-#X obj 138 96 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 101 149 float \$1;
+#X obj 135 187 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X text 207 53 A layer consists of one fader \, and two buttons;
+#X obj 134 149 inlet;
+#X obj 135 211 f \$1;
 #X connect 0 0 5 0;
 #X connect 0 0 3 1;
 #X connect 1 0 5 0;
@@ -15,5 +16,6 @@
 #X connect 2 0 5 0;
 #X connect 2 0 3 3;
 #X connect 3 0 4 0;
-#X connect 5 0 6 0;
-#X connect 6 0 3 0;
+#X connect 5 0 8 0;
+#X connect 7 0 5 0;
+#X connect 8 0 3 0;
