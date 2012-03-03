@@ -1,5 +1,6 @@
 This is an interface to the BCF2000, according to the patch included. Not smart, I know, but my first MIDI patch, and I don't want to start over again :P
 
+So in the end, goal is for you to use one layers, one controls and 4 imgProc rather than have a full console. 
 Abstractions:
 
 click $CC $channel(on/off button)
